@@ -1,0 +1,14 @@
+file_format: "1"
+id: cygnus
+name: cygnus
+type: shield
+url: https://github.com/kata0510/cygnus
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+  - studio
+siblings:
+  - cygnus_left
+  - cygnus_right
