@@ -13,36 +13,36 @@
     };
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
-        columns = <16>;
+        columns = <10>;
         rows = <4>;
         map = <
-        RC(0,0) RC(0,1) RC(0,2) RC(0,3) RC(0,4) RC(0,5)     RC(0,6) RC(0,7) RC(0,8) RC(0,9) RC(0,10) RC(0,11)
-        RC(1,0) RC(1,1) RC(1,2) RC(1,3) RC(1,4) RC(1,5)     RC(1,6) RC(1,7) RC(1,8) RC(1,9) RC(1,10) RC(1,11)
-        RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)     RC(2,6) RC(2,7) RC(2,8) RC(2,9) RC(2,10) RC(2,11)
-                                RC(3,3) RC(3,4) RC(3,5)     RC(3,6) RC(3,7) RC(3,8)
+        RC(0,0) RC(0,1) RC(0,2) RC(0,3) RC(0,4)     RC(0,5) RC(0,6) RC(0,7) RC(0,8) RC(0,9)
+        RC(1,0) RC(1,1) RC(1,2) RC(1,3) RC(1,4)     RC(1,5) RC(1,6) RC(1,7) RC(1,8) RC(1,9)
+        RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4)     RC(2,5) RC(2,6) RC(2,7) RC(2,8) RC(2,9)
+                        RC(3,2) RC(3,3) RC(3,4)     RC(3,5) RC(3,6) RC(3,7)
         >;
     };
     my_custom_layout: my_custom_layout {
         compatible = "zmk,physical-layout";
-        display-name = "Cygnus";
+        display-name = "Cygnus 3x5";
         transform = <&default_transform>;
         keys =
             // Row 0 Left
-            <&key_physical_attrs 100 100    0  150       0     0     0>, <&key_physical_attrs 100 100  100  137       0     0     0>, <&key_physical_attrs 100 100  200  112       0     0     0>, <&key_physical_attrs 100 100  300  100       0     0     0>, <&key_physical_attrs 100 100  400  112       0     0     0>, <&key_physical_attrs 100 100  500  125       0     0     0>,
+            <&key_physical_attrs 100 100    0  137        0     0     0>, <&key_physical_attrs 100 100  100  112        0     0     0>, <&key_physical_attrs 100 100  200  100        0     0     0>, <&key_physical_attrs 100 100  300  112        0     0     0>, <&key_physical_attrs 100 100  400  125        0     0     0>,
             // Row 0 Right
-            <&key_physical_attrs 100 100 1050  125       0     0     0>, <&key_physical_attrs 100 100 1150  112       0     0     0>, <&key_physical_attrs 100 100 1250  100       0     0     0>, <&key_physical_attrs 100 100 1350  112       0     0     0>, <&key_physical_attrs 100 100 1450  137       0     0     0>, <&key_physical_attrs 100 100 1550  150       0     0     0>,
+            <&key_physical_attrs 100 100  950  125        0     0     0>, <&key_physical_attrs 100 100 1050  112        0     0     0>, <&key_physical_attrs 100 100 1150  100        0     0     0>, <&key_physical_attrs 100 100 1250  112        0     0     0>, <&key_physical_attrs 100 100 1350  137        0     0     0>,
             // Row 1 Left
-            <&key_physical_attrs 100 100    0  250       0     0     0>, <&key_physical_attrs 100 100  100  237       0     0     0>, <&key_physical_attrs 100 100  200  212       0     0     0>, <&key_physical_attrs 100 100  300  200       0     0     0>, <&key_physical_attrs 100 100  400  212       0     0     0>, <&key_physical_attrs 100 100  500  225       0     0     0>,
+            <&key_physical_attrs 100 100    0  237        0     0     0>, <&key_physical_attrs 100 100  100  212        0     0     0>, <&key_physical_attrs 100 100  200  200        0     0     0>, <&key_physical_attrs 100 100  300  212        0     0     0>, <&key_physical_attrs 100 100  400  225        0     0     0>,
             // Row 1 Right
-            <&key_physical_attrs 100 100 1050  225       0     0     0>, <&key_physical_attrs 100 100 1150  212       0     0     0>, <&key_physical_attrs 100 100 1250  200       0     0     0>, <&key_physical_attrs 100 100 1350  212       0     0     0>, <&key_physical_attrs 100 100 1450  237       0     0     0>, <&key_physical_attrs 100 100 1550  250       0     0     0>,
+            <&key_physical_attrs 100 100  950  225        0     0     0>, <&key_physical_attrs 100 100 1050  212        0     0     0>, <&key_physical_attrs 100 100 1150  200        0     0     0>, <&key_physical_attrs 100 100 1250  212        0     0     0>, <&key_physical_attrs 100 100 1350  237        0     0     0>,
             // Row 2 Left
-            <&key_physical_attrs 100 100    0  350       0     0     0>, <&key_physical_attrs 100 100  100  337       0     0     0>, <&key_physical_attrs 100 100  200  312       0     0     0>, <&key_physical_attrs 100 100  300  300       0     0     0>, <&key_physical_attrs 100 100  400  312       0     0     0>, <&key_physical_attrs 100 100  500  325       0     0     0>,
+            <&key_physical_attrs 100 100    0  337        0     0     0>, <&key_physical_attrs 100 100  100  312        0     0     0>, <&key_physical_attrs 100 100  200  300        0     0     0>, <&key_physical_attrs 100 100  300  312        0     0     0>, <&key_physical_attrs 100 100  400  325        0     0     0>,
             // Row 2 Right
-            <&key_physical_attrs 100 100 1050  325       0     0     0>, <&key_physical_attrs 100 100 1150  312       0     0     0>, <&key_physical_attrs 100 100 1250  300       0     0     0>, <&key_physical_attrs 100 100 1350  312       0     0     0>, <&key_physical_attrs 100 100 1450  337       0     0     0>, <&key_physical_attrs 100 100 1550  350       0     0     0>,
-            // Thumbs Left (Inner to Outer? No, Left to Right based on X coord: 350, 450, 575)
-            <&key_physical_attrs 100 100  350  415       0     0     0>, <&key_physical_attrs 100 100  450  425       0     0     0>, <&key_physical_attrs 100 150  575  400    3000   625   475>,
-            // Thumbs Right (Left to Right based on X coord: 975, 1100, 1200)
-            <&key_physical_attrs 100 150  975  400 (-3000)  1025   475>, <&key_physical_attrs 100 100 1100  425       0     0     0>, <&key_physical_attrs 100 100 1200  415       0     0     0>;
+            <&key_physical_attrs 100 100  950  325        0     0     0>, <&key_physical_attrs 100 100 1050  312        0     0     0>, <&key_physical_attrs 100 100 1150  300        0     0     0>, <&key_physical_attrs 100 100 1250  312        0     0     0>, <&key_physical_attrs 100 100 1350  337        0     0     0>,
+            // Thumbs Left (outer -> inner)
+            <&key_physical_attrs 100 100  250  415        0     0     0>, <&key_physical_attrs 100 100  350  425        0     0     0>, <&key_physical_attrs 100 150  475  400     3000   525   475>,
+            // Thumbs Right (inner -> outer)
+            <&key_physical_attrs 100 150  875  400  (-3000)   925   475>, <&key_physical_attrs 100 100 1000  425        0     0     0>, <&key_physical_attrs 100 100 1100  415        0     0     0>;
     };
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
